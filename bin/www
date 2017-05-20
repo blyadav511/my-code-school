@@ -1,0 +1,71 @@
+/**
+*Module dependencies
+*/
+
+var app = require("../app");
+var debug = require("debug")("my_code_school:server");
+var http = require("http");
+
+/**
+*Get Port from environment veriable and stor in express
+*/
+
+var port = mormalizePort(process.env.PORT || "8080");
+app.set('port',port);
+
+/**
+* Create hppt server
+*/ 
+
+var server = http.createServer(app);
+server.on('error', onError);
+server.on('listening', onListening);
+
+/**
+* listen on provided port on all network communication
+*/
+
+server.listen(port);
+
+function mormalizePort(val){
+	var port = parseInt(val, 10);
+	if(isNaN(port)){
+		//named pipe
+		return port;
+	}
+
+	if(port >= 0){
+		// port
+		return port;
+	}
+	return false;
+}
+
+function onError(error){
+	if(error.syscall !== "listen"){
+		throw error; 
+	}
+
+	var bind = typeof port === "string" ? 'pipe ' + port : "port " + port;
+
+	switch(error.code){
+		case 'ESCCES':
+			console.error(bind + " require elevated prevleges");
+			process.exit(1);
+			break;
+		case 'EADDRINUSE':
+			console.error(bind + " is already in use");
+			process.exit(1);
+			break;
+		default: 
+			throw error;
+	}
+}
+
+function onListening(){
+	var adder = server.address();
+	var bind = typeof adder === "string" ? 'pipe ' + adder : "port " + adder.port;
+	debug('Listening on ' + bind);
+}
+
+console.log(process.env.EMAIL_LIST);
