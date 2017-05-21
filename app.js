@@ -13,19 +13,19 @@ app.set('views', path.join(__dirname, "views"));
 app.set('view engine', 'jade');
 
 app.use(logger('dev'));
-app.use(bodyParser.urlencoded({
-	extended:false,
-	paramaterLimit:10000,
-	limit: 1024*1024*10
-}));
+// app.use(bodyParser.urlencoded({
+// 	extended:false,
+// 	paramaterLimit:10000,
+// 	limit: 1024*1024*10
+// }));
 
-app.use(bodyParser.json({
-	extended:false,
-	paramaterLimit:10000,
-	limit: 1024*1024*10
-}));
+// app.use(bodyParser.json({
+// 	extended:false,
+// 	paramaterLimit:10000,
+// 	limit: 1024*1024*10
+// }));
 
-app.use(cookieParser());
+// app.use(cookieParser());
 
 app.use(express.static(path.join(__dirname, 'public')));
 
