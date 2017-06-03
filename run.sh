@@ -1,2 +1,3 @@
 export EMAIL_LIST='["blyadav511@gmail.com"]'
-PORT=9000 node ./bin/www
+export PORT='9000'
+sudo nohup node ./bin/www &
