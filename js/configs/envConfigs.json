@@ -1,0 +1,7 @@
+{
+	"AUTH_USERNAME":"babu",
+	"AUTH_PASSWORD":"yadav",
+	"PORT":"8080",
+	"APP_LOG_LEVEL":"info",
+	"APP_LOG":"./my_code_school.log"
+}
