@@ -1,11 +1,73 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" ng-app="myCodeSchool">
 	<head>
 		<meta charset="utf-8">
 		<title>My Code School</title>
+		<link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css">
+		<link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+		<link rel="stylesheet"  href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+
+		<script src="bower_components/jquery/dist/jquery.js"></script>
+		<script src="bower_components/jquery/dist/jquery.min.js"></script>
+		<script src="bower_components/angular/angular.js"></script>
+		<script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
+		<script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+		<script src="bower_components/angular-sanitize/angular-sanitize.js"></script>
+		<script src="bower_components/angular-flash-alert/dist/angular-flash.js"></script>
+		<script src="bower_components/angular-flash-alert/dist/angular-flash.min.js"></script>
+		<script src="bower_components/angular-animate/angular-animate.js"></script>
+		<script src="bower_components/angular-animate/angular-animate.min.js"></script>
+		<script src="bower_components/angular-response/response/response.js"></script>
+		<script src="bower_components/angular-cookies/angular-cookies.js"></script>
+		<script src="bower_components/angular-route/angular-route.js"></script>
+		<script src="bower_components/angular-resource/angular-resource.js"></script>
+
+		<script src="js/app.js"></script>
+		<script src="js/controllers/homeCtrl.js"></script>
+		<script src="js/services.js"></script>
+		<link rel="stylesheet" type="text/css" href="css/app.css">
+
+
 	</head>
 
-	<body>
-		<h1>Hi !!!</h1>
+	<body class="container">
+	<header class="header">
+		<a href="#/home">
+			<img src="img/logo.png" class="logo">
+		</a>
+		<table class = "headerTable">
+			<tr class="row">
+				<td>
+					<div class="menu">
+						<a href="#!home">Home</a>
+					</div>
+				</td>
+				<td>
+					<div class="menu">
+						<a href="">About Us</a>
+					</div>
+				</td>
+				<td>
+					<div class="menu">
+						<a href="">Faculty</a>
+					</div>		
+				</td>
+				<td>
+					<div class="menu">
+						<a href="">Student</a>
+					</div>
+				</td>
+				<td>
+					<div class="menu">
+						<a href="">Contact 	Us</a>
+					</div>
+				</td>
+			</tr>
+		</table>
+	</header>
+	<div ng-view>
+		
+	</div>
+		
 	</body>
 </html>

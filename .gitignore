@@ -1,2 +1,4 @@
 node_modules/
+bower_components/
+ui/public/bower_components/
 my_code_school.log

@@ -18,7 +18,8 @@
     "angular-animate":"*",
     "angular-cookies":"*",
     "ui-select":"*",
-    "angular-file-upload":"*"
+    "angular-file-upload":"*",
+    "angular-resource":"*"
   },
   "authors": [
     "Babu Yadav"

@@ -1,0 +1,17 @@
+.header {
+	padding-top: 0.5em;
+	padding-bottom: 0.5px;
+}
+.headerTable {
+	width: 100%;
+	background: #E6E6E6;
+	padding-top: 0.5em;	
+	text-align: center;
+	margin-top: 0.5em;
+}
+
+.menu {
+	text-align: center;
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+}
